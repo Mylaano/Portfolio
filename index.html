@@ -2,10 +2,13 @@
 <html lang="fr">
 
 <head>
+    <title>Damien Druaux - Portfolio</title>
+    <meta name="description=" content="Portfolio de Damien Druaux. Développeur / Intégrateur Web basé en Normandie. 
+        Réalisation de site front-end avec des compétences en HTML, CSS, JavaScript et SQL.">
+    <meta name="keywords" content="Développeur, Intégrateur, Front-End, HTML, CSS, JavaScript, SQL, Normandie, Portfolio, Web, API, Site">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damien Druaux - Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -39,9 +42,9 @@
             <figure>
                 <img src="assets/img/damien-druaux-picture.jpg" alt="Damien Druaux Picture">
                 <figcaption>
-                    <h2>Hello!</h2>
-                    <p>Je suis Damien Druaux.<br>Développeur / Intégrateur<br>Web basé en Normandie.</p>
-                    <button class="btn btn-primary">Me contacter</button>
+                    <p>Hello!</p>
+                    <h2>Je suis Damien Druaux. <br>Développeur / Intégrateur <br>Web basé en Normandie.</h2>
+                    <button class="btn btn-primary contact-me">Me contacter</button>
                 </figcaption>
             </figure>
         </section>
@@ -50,9 +53,9 @@
             <h3>Mes projets</h3>
 
             <div class="filter">
-                <button class="btn btn-secondary btn-active">Tous</button>
-                <button class="btn btn-secondary">Intégration Web</button>
-                <button class="btn btn-secondary">UI / UX Design</button>
+                <button data-filter="all" class="btn btn-secondary btn-active">Tous</button>
+                <button data-filter="web" class="btn btn-secondary">Intégration Web</button>
+                <button data-filter="design" class="btn btn-secondary">UI / UX Design</button>
             </div>
 
             <article class="projects-list">
@@ -61,7 +64,7 @@
                     <figcaption>
                         <div class="project-description">
                             <h4>Sophie Bluel - Portfolio</h4>
-                            <h5>Intégration Web</h5>
+                            <span>Intégration Web</span>
                             
                             <p>
                                 Sophie Bluel - Portfolio est un projet de formation réalisé à OpenClassrooms afin d’apprendre le JavaScript. Basé sur une maquette Figma, 
@@ -88,7 +91,7 @@
                     <figcaption>
                         <div class="project-description">
                             <h4>OhMyFood</h4>
-                            <h5>Intégration Web</h5>
+                            <span>Intégration Web</span>
                             
                             <p>
                                 OhMyFood est un projet de formation réalisé à OpenClassrooms afin d’apprendre les animations CSS. 
@@ -115,7 +118,7 @@
                     <figcaption>
                         <div class="project-description">
                             <h4>Booki</h4>
-                            <h5>Intégration Web</h5>
+                            <span>Intégration Web</span>
                             
                             <p>
                                 Booki est un projet de formation réalisé à OpenClassrooms afin d’apprendre le responsive. 
@@ -138,6 +141,37 @@
                 </figure>
             </article>
         </section>
+
+        <div class="modal-container">
+            <div class="modal">
+                <button class="close-modal">
+                    <img src="assets/img/icons/x.svg" alt="Close Icon">
+                </button>
+
+                <p class="title-modal">Me contacter</p>
+
+                <form>
+                    <div class="form-input">
+                        <label>Adresse e-mail</label>
+                        <input type="email" placeholder="Ex.: johndoe@mail.com" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label>Objet</label>
+                        <input type="text" placeholder="Ex.: Refonte d'un site vitrine" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label>Message</label>
+                        <textarea required></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <input class="btn btn-primary" type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>

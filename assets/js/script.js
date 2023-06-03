@@ -26,7 +26,8 @@ document.querySelector('.close-modal').addEventListener('click', () => {
     modalContainer.style.animation = 'FadeOut 500ms ease-in-out forwards';
 
     setTimeout(() => { 
-        modalContainer.style.display = 'none';
+        modalContainer.style.display = '';
+        modalContainer.style.animation = '';
     }, 500);
 });
 

@@ -128,13 +128,13 @@ header {
     margin-bottom: 180px;
 }
 
-.nav, .links {
+.links {
     display: flex;
 }
 
 .nav {
     display: grid;
-    grid-template-columns: 40% 10% 40%;
+    grid-template-columns: 40% 20% 40%;
     justify-content: space-between;
 }
 
@@ -347,7 +347,6 @@ footer p {
     display: none;
     justify-content: center;
     align-items: center;
-    animation: none 500ms ease-in-out forwards;
 }
 
 .modal {

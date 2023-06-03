@@ -96,6 +96,7 @@ ul {
     top: 0;
     left: 0;
     background-color: rgb(117 12 166 / 10%);
+    border-radius: 2px;
     transition: width 0.6s ease-in-out;
 }
 

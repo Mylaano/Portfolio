@@ -15,14 +15,14 @@ buttons.forEach(item => {
 
 // Modal
 
-document.querySelector('.contact-me').addEventListener('click', () => {
-    const modalContainer = document.querySelector('.modal-container');
+document.querySelector('.section__home--contact').addEventListener('click', () => {
+    const modalContainer = document.querySelector('.modal__container');
     modalContainer.style.display = 'flex';
     modalContainer.style.animation = 'FadeIn 500ms ease-in-out forwards';
 });
 
-document.querySelector('.close-modal').addEventListener('click', () => {
-    const modalContainer = document.querySelector('.modal-container');
+document.querySelector('.modal__close').addEventListener('click', () => {
+    const modalContainer = document.querySelector('.modal__container');
     modalContainer.style.animation = 'FadeOut 500ms ease-in-out forwards';
 
     setTimeout(() => { 
@@ -31,6 +31,6 @@ document.querySelector('.close-modal').addEventListener('click', () => {
     }, 500);
 });
 
-document.querySelector('.form-submit').children[0].addEventListener('click', (e) => {
+document.querySelector('.modal__form--submit').children[0].addEventListener('click', (e) => {
     e.preventDefault();
 });

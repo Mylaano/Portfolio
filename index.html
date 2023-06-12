@@ -4,8 +4,8 @@
 <head>
     <title>Damien Druaux - Portfolio</title>
     <meta name="description" content="Portfolio de Damien Druaux. Développeur / Intégrateur Web basé en Normandie. 
-        Réalisation de site front-end avec des compétences en HTML, CSS, JavaScript et SQL.">
-    <meta name="keywords" content="Développeur, Intégrateur, Front-End, HTML, CSS, JavaScript, SQL, Normandie, Portfolio, Web, API, Site">
+        Réalisation de site front-end avec des compétences en HTML, CSS, SASS, JavaScript et SQL.">
+    <meta name="keywords" content="Développeur, Intégrateur, Front-End, HTML, CSS, JavaScript, SQL, SASS, SCSS, Normandie, Portfolio, Web, API, Site">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,15 @@
 
 <body>
     <header>
-        <nav class="nav">
-            <ul class="links links-anchor">
-                <li class="active"><a href="#home">Accueil</a></li>
+        <nav class="navbar">
+            <ul class="navbar__link navbar__link--anchor">
+                <li><a class="navbar__link--purple" href="#home">Accueil</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">A propos</a></li>
             </ul>
-            <h1>Damien Druaux</h1>
-            <ul class="links links-social">
+            <h1 class="navbar__title">Damien Druaux</h1>
+            <ul class="navbar__link navbar__link--socialnetwork">
                 <li>
                     <a href="https://www.linkedin.com/in/damien-d-576a98269/" target="_blank">
                         <img src="assets/img/icons/linkedin.svg" alt="Linkedin Icon">
@@ -42,42 +42,42 @@
     </header>
 
     <main>
-        <section id="home">
+        <section id="home" class="section__home">
             <figure>
                 <img src="assets/img/damien-druaux-picture.webp" alt="Damien Druaux Picture">
                 <figcaption>
                     <p>Hello!</p>
                     <h2>Je suis Damien Druaux. <br>Développeur / Intégrateur <br>Web basé en Normandie.</h2>
-                    <button class="btn btn-primary contact-me">Me contacter</button>
+                    <button class="btn btn-primary section__home--contact">Me contacter</button>
                 </figcaption>
             </figure>
         </section>
 
-        <section id="projects">
-            <h3>Mes projets</h3>
+        <section id="projects" class="project">
+            <h3 class="project__title">Mes projets</h3>
 
-            <div class="filter">
+            <div class="project__filter">
                 <button data-filter="all" class="btn btn-secondary btn-active">Tous</button>
                 <button data-filter="web" class="btn btn-secondary">Intégration Web</button>
                 <button data-filter="design" class="btn btn-secondary">UI / UX Design</button>
             </div>
 
-            <article class="projects-list">
+            <article class="project__list">
                 <figure>
-                    <img src="assets/img/sophie-bluel-project.webp" alt="Sophie Bluel Picture" class="project-picture">
+                    <img class="project__list--picture" src="assets/img/sophie-bluel-project.webp" alt="Sophie Bluel Picture">
                     <figcaption>
-                        <div class="project-description">
-                            <h4>Sophie Bluel - Portfolio</h4>
-                            <span>Intégration Web</span>
+                        <div>
+                            <h4 class="project__list--title">Sophie Bluel - Portfolio</h4>
+                            <span class="project__list--subtitle">Intégration Web</span>
                             
-                            <p>
+                            <p class="project__list--text">
                                 Sophie Bluel - Portfolio est un projet de formation réalisé à OpenClassrooms afin d’apprendre le JavaScript. Basé sur une maquette Figma, 
                                 j’ai intégré une page de connexion et affiché dynamiquement depuis une API les travaux dans le portfolio. L’intégration d’une modale était également 
                                 demandée afin d’ajouter ou encore de supprimer des travaux en tant qu’administrateur du site.
                             </p>
                         </div>
 
-                        <div class="btn-list">
+                        <div class="project__list--buttons">
                             <a class="btn btn-primary" href="https://github.com/Mylaano/Sophie-Bluel-Portfolio" target="_blank">
                                 <img src="assets/img/icons/github.svg" alt="GitHub Icon">
                                 Voir le code
@@ -91,20 +91,20 @@
                 </figure>
 
                 <figure>
-                    <img src="assets/img/ohmyfood-project.webp" alt="OhMyFood Picture" class="project-picture">
+                    <img class="project__list--picture" src="assets/img/ohmyfood-project.webp" alt="OhMyFood Picture">
                     <figcaption>
-                        <div class="project-description">
-                            <h4>OhMyFood</h4>
-                            <span>Intégration Web</span>
+                        <div>
+                            <h4 class="project__list--title">OhMyFood</h4>
+                            <span class="project__list--subtitle">Intégration Web</span>
                             
-                            <p>
+                            <p class="project__list--text">
                                 OhMyFood est un projet de formation réalisé à OpenClassrooms afin d’apprendre les animations CSS. 
                                 Basé sur une maquette Figma en mobile first, j’ai intégré une page d’accueil, quatre pages de menu 
                                 de restaurants et un loader.
                             </p>
                         </div>
 
-                        <div class="btn-list">
+                        <div class="project__list--buttons">
                             <a class="btn btn-primary" href="https://github.com/Mylaano/OhMyFood" target="_blank">
                                 <img src="assets/img/icons/github.svg" alt="GitHub Icon">
                                 Voir le code
@@ -118,20 +118,20 @@
                 </figure>
 
                 <figure>
-                    <img src="assets/img/booki-project.webp" alt="Booki Picture" class="project-picture">
+                    <img class="project__list--picture" src="assets/img/booki-project.webp" alt="Booki Picture">
                     <figcaption>
-                        <div class="project-description">
-                            <h4>Booki</h4>
-                            <span>Intégration Web</span>
+                        <div>
+                            <h4 class="project__list--title">Booki</h4>
+                            <span class="project__list--subtitle">Intégration Web</span>
                             
-                            <p>
+                            <p class="project__list--text">
                                 Booki est un projet de formation réalisé à OpenClassrooms afin d’apprendre le responsive. 
                                 Basé sur une maquette Figma, j’ai intégré une landing page en version desktop et utilisé 
                                 les medias-queries pour rendre le site compatible avec les versions tablette et mobile.
                             </p>
                         </div>
 
-                        <div class="btn-list">
+                        <div class="project__list--buttons">
                             <a class="btn btn-primary" href="https://github.com/Mylaano/Booki" target="_blank">
                                 <img src="assets/img/icons/github.svg" alt="GitHub Icon">
                                 Voir le code
@@ -146,31 +146,31 @@
             </article>
         </section>
 
-        <div class="modal-container">
+        <div class="modal__container">
             <div class="modal">
-                <button class="close-modal">
+                <button class="modal__close">
                     <img src="assets/img/icons/x.svg" alt="Close Icon">
                 </button>
 
-                <p class="title-modal">Me contacter</p>
+                <p class="modal__title">Me contacter</p>
 
-                <form>
-                    <div class="form-input">
-                        <label>Adresse e-mail</label>
-                        <input type="email" placeholder="Ex.: johndoe@mail.com" required>
+                <form class="modal__form">
+                    <div class="modal__form--input">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Ex.: johndoe@mail.com" required>
                     </div>
 
-                    <div class="form-input">
-                        <label>Objet</label>
-                        <input type="text" placeholder="Ex.: Refonte d'un site vitrine" required>
+                    <div class="modal__form--input">
+                        <label for="object">Objet</label>
+                        <input type="text" name="object" id="object" placeholder="Ex.: Refonte d'un site vitrine" required>
                     </div>
 
-                    <div class="form-input">
-                        <label>Message</label>
-                        <textarea required></textarea>
+                    <div class="modal__form--input">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Votre message..." required></textarea>
                     </div>
                     
-                    <div class="form-submit">
+                    <div class="modal__form--submit">
                         <input class="btn btn-primary" type="submit" value="Envoyer">
                     </div>
                 </form>
@@ -178,8 +178,8 @@
         </div>
     </main>
 
-    <footer>
-        <p>Designed and developed with passion</p>
+    <footer class="footer">
+        <p class="footer__text">Designed and developed with passion</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
